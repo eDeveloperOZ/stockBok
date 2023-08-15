@@ -73,6 +73,13 @@ Add a new task to the tasks.md file in the following format:
 - **Status**: The status of the task. It can be one of the following: Open, In progress, Done.
 - **Assigned to**: The person git username assigned to the task. you should only assign yourself to a task.
 
+2. **Assigning a task to yourself**
+To assign yourself to a task, edit the Assigned to column of the corresponding row and replace @YourName with your GitHub username. This indicates that you're taking responsibility for that task.
+
+3. **Updating a task status**
+When you start working on a task, change the status to In progress, push the changes to the remote repository and create a new branch for the task. When you finish the task, change the status to Done, push the changes to the remote repository and create a pull request.
+**NOTICE: we are using a collborative editing methodology for complete transparency in a single place. This means we are shouls all handle the tasks.md file with care and according to the rules.**
+
 ### Branching strategy
 We follow a branching strategy to keep the codebase clean and organized. The strategy is as follows: feat for feature, fix for bug fixes and imp for improvements. The branch name should be in the format: `<type>/<name>`. For example, `feat/login-page` or `fix/bug-in-login`.
 Commits should be in a format and  explain what the commit does. For example, `feat: add login page` or `fix: fix bug in login page`.
