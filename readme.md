@@ -45,18 +45,18 @@ This is the base structure of the project. It may change as the project evolves.
 ## Development guide
 
 ### Setting up the development environment
-1. **Clone the repository**
+1. **Clone the repository**:
 ``` bash 
 git clone git@github.com:eDeveloperOZ/stockBok.git && 
 cd stockBok
 ```
-2. **Install dependencies**
+2. **Install dependencies**:
 ``` bash
 cd frontend && npm install && cd ../server && npm install && cd ..
 ```
 
 ### We use a task tracking file, tasks.md to manage and keep track on the features and bugs we are working on.
-1. **Adding a new task**
+1. **Adding a new task**:
 Add a new task to the tasks.md file in the following format:
 ``` markdown
 | #Number | Type | Description | Status | Assigned to |
@@ -71,18 +71,25 @@ Add a new task to the tasks.md file in the following format:
     - **Bug**: A description of the bug and HOW TO REPRODUCE IT.
     - **Improvement**: A description of the improvement and the feature it is related to.
 - **Status**: The status of the task. It can be one of the following: Open, In progress, Done.
-- **Assigned to**: The person git username assigned to the task. you should only assign yourself to a task.
+- **Assigned to**: The person git username assigned to the task. you should only assign yourself to a task. You may leave this field empty if you're not working on the task.
 
-2. **Assigning a task to yourself**
+2. **Assigning a task to yourself**:
 To assign yourself to a task, edit the Assigned to column of the corresponding row and replace @YourName with your GitHub username. This indicates that you're taking responsibility for that task.
 
-3. **Updating a task status**
+3. **Updating a task status**:
 When you start working on a task, change the status to In progress, push the changes to the remote repository and create a new branch for the task. When you finish the task, change the status to Done, push the changes to the remote repository and create a pull request.
-**NOTICE: we are using a collborative editing methodology for complete transparency in a single place. This means we are shouls all handle the tasks.md file with care and according to the rules.**
+> :warning: **NOTICE: we are using a collborative editing methodology for complete transparency in a single place. This means we are shouls all handle the tasks.md file with care and according to the rules.**
+
+4. **Report a bug**:
+If you find a bug in the application, create a new task in the tasks.md file with the type Bug and the description of the bug and HOW TO REPRODUCE IT.  Make sure to keep the following format:
+``` markdown
+| #Number | Type | Description | Status | Assigned to |
+```
+
 
 ### Branching strategy
 We follow a branching strategy to keep the codebase clean and organized. The strategy is as follows: feat for feature, fix for bug fixes and imp for improvements. The branch name should be in the format: `<type>/<name>`. For example, `feat/login-page` or `fix/bug-in-login`.
-Commits should be in a format and  explain what the commit does. For example, `feat: add login page` or `fix: fix bug in login page`.
+Commits should be in a format and  explain what the commit does. For example, `feat: add login page` or `fix#N: fix bug in login page`.  Change N to the number of the bug in the tasks.md file.
 **Use descriptive names for branches.**
 1. **Create a new branch**
 ``` bash
